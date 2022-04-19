@@ -1,0 +1,140 @@
+#elevator-control-panel {
+	 display: block;
+	 height: 580px;
+	 width: 320px;
+	 background: #E6E6FA;
+	 border: 4px solid #000;
+	 border-radius: 4px;
+	 font-family: fantasy, papyrus;
+}
+ #display {
+	 position: relative;
+	 height: 210px;
+	 width: 260px;
+	 margin: 30px auto;
+	 background: #000;
+	 overflow: hidden;
+}
+ #floors {
+	 display: block;
+	 height: 100%;
+	 width: 50%;
+	 margin: 0;
+	 padding: 0;
+	 transition: transform 800ms ease-out;
+	 transform: translate3d(0,-630px,0);
+}
+ #floors li {
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 color: #fff;
+	 font-size: 8em;
+	 text-align: center;
+	 line-height: 1.6em;
+}
+ .signal {
+	 position: absolute;
+	 height: 60px;
+	 width: 60px;
+	 opacity: 0.3;
+	 transition: opacity 200ms ease-out;
+	 -webkit-transition: opacity 200ms ease-out;
+}
+ #up {
+	 background: #6bbe44;
+	 top: 30px;
+	 right: 30px;
+}
+ #down {
+	 background: #ff0000;
+	 bottom: 30px;
+	 right: 30px;
+}
+ #display.up #up {
+	 opacity: 1;
+}
+ #display.down #down {
+	 opacity: 1;
+}
+ #buttons {
+	 position: relative;
+	 height: 150px;
+	 width: 250px;
+	 margin: 0 auto;
+	 padding: 0;
+}
+ #buttons li {
+	 position: absolute;
+    display: table;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border: 4px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 200ms ease-out;
+    -webkit-transition: background 200ms ease-out;
+}
+ #buttons li:nth-child(1) {
+	 top: 3px;
+   bottom: 3px;
+   left: 3px;
+   right: 3px;
+   height: 60px;
+   width: 60px;
+}
+ #buttons li:nth-child(2) {
+	top: 3px;
+  bottom: 3px;
+  left: 180px;
+  right: 8px;
+  height: 60px;
+  width: 60px;
+}
+ #buttons li:nth-child(3) {
+	top: 80px;
+  bottom: 3px;
+  left: 3px;
+  right: 8px;
+  height: 60px;
+  width: 60px;
+}
+ #buttons li:nth-child(4) {
+	 top: 80px;
+  bottom: 3px;
+  left: 180px;
+  right: 8px;
+  height: 60px;
+  width: 60px;
+}
+ #buttons li:nth-child(5) {
+	top: 157px;
+  bottom: 3px;
+  left: 3px;
+  right: 8px;
+  height: 60px;
+  width: 60px;
+}
+ #buttons li:nth-child(6) {
+	top: 157px;
+  bottom: 3px;
+  left: 180px;
+  right: 8px;
+  height: 60px;
+  width: 60px;
+}
+ #buttons li.active {
+	 background: #fff06b;
+}
+ #buttons li:hover {
+	 background: #fff06b;
+}
+ #buttons span {
+	 user-select: none;
+	 -webkit-user-select: none;
+	 display: table-cell;
+	 vertical-align: middle;
+	 text-align: center;
+	 font-size: 3em;
+}
